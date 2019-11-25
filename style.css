@@ -1,0 +1,25 @@
+#container {
+    width: 360px;
+    margin: 100px 20px 20px 0px;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgb (0,0,0, 0.1);
+    text-align: center;
+}
+
+ul {
+    height: 80%;
+    width: 80%;
+    text-align: center;
+}
+
+li {
+    height: 60%;
+    width: 60%;
+}
+
+.btn {
+    height: 30px;
+    width: 30px;
+    padding: 0px 10px 0px 10px;
+}
+

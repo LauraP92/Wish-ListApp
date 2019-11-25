@@ -1,0 +1,10 @@
+body {
+    background: url("annie-spratt-X4l3CjcDvic-unsplash.jpg");
+    background-size: cover;
+}
+
+.list {
+    height: 400px;
+    width: 300px;
+    margin: 70px auto;
+}
