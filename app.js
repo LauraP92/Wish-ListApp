@@ -10,53 +10,55 @@ var data = {
         { name: "Bogdan", toys: "books" }
     ]
 }
-// var moveBtn = document.querySelector(".btn");
-// var push = false;
 
-for (i = 0; i < data.badKids.length; i++) {
-    var bad = data.badKids[i].name;
-    $("#tablebadkids").append(
-        `<table>
-            <tbody>
-            <tr>
+showBadKids();
+showGoodKids();
+
+function showBadKids () {
+    for (i = 0; i < data.badKids.length; i++) {
+        var bad = data.badKids[i].name;
+        $("#tablebadkids").append(
+            `<tr id="${i}">
             <td><a href="indexwish.html?kidName=${bad}">${bad}</a></td>
-            <td><button class="btn" type="submit"><i class="material-icons right">chevron_right</i><td>
-          </button>
-            </tr>
-            </tbody>
-            </table>`)
+            <td><button class="btn1" type="submit"><i class="material-icons right">chevron_right</i><td>
+            </button>
+            </tr>`)
+    }
+    $("td").on("click", ".btn1", function (e) {
+        var id = $(this).closest('tr').attr('id');
+        data.goodKids.splice(id, 0, data.badKids.splice(id, 1)[0]);
+        $("tr").remove();
+        showBadKids();
+        showGoodKids();
+    })
 }
-
-
-for (j = 0; j < data.goodKids.length; j++) {
-    var good = data.goodKids[j].name;
-    $("#tablegoodkids").append(
-        `<table>
-            <tbody>
-            <td><button class="btn" type="submit"><i class="material-icons right">chevron_left</i><td>
-            <td><a href="indexwish.html?kidName=${good}">${good}</a></td>
-            </tr>
-            </tbody>
-            </table>`)
-}
-
-// moveBtn.addEventListener("click", () => {
-//     push = true;
-// })
-
-// var pushOut = data.badKids.indexOf(data.badKids);
-// $("table").on("click", ".btn", function(event){
-//     $(this).parent().splice(pushOut, 1)
-        // $(this).data.goodKids.push(data.badKids)
     
-    // event.stopPropagation();
-// })
+function showGoodKids () {
+    for (j = 0; j < data.goodKids.length; j++) {
+        var good = data.goodKids[j].name;
+        $("#tablegoodkids").append(
+            `<tr id="${j}">
+            <td><button class="btn2" type="submit"><i class="material-icons right">chevron_left</i></button><td>
+            <td><a href="indexwish.html?kidName=${good}">${good}</a></td>
+            </tr>`)
+    }
+    $("td").on("click", ".btn2", function (e) {
+        var id = $(this).closest('tr').attr('id');
+        data.badKids.splice(id, 0, data.goodKids.splice(id, 1)[0]);
+        $("tr").remove();
+        showGoodKids();
+        showBadKids();
+    })
+}
 
 
 
-// $("ul").on("click", "span", function(event){
-//     $(this).parent().fadeOut(500, function(){
-//         $(this).remove();    
-//     });
-//     event.stopPropagation();
-// })
+
+
+
+
+
+
+
+
+
