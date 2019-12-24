@@ -1,11 +1,57 @@
 body {
-    background: url("annie-spratt-X4l3CjcDvic-unsplash.jpg");
+    background: url("mel-poole-LUPXhXj2ip0-unsplash.jpg");
     background-size: cover;
 }
 
 .list {
-    height: 400px;
-    width: 300px;
-    margin: 70px auto;
+    height: 100%;
+    width: 40%;
+    margin: 100px auto;
 }
 
+.list-group {
+    height: 100%;
+    width: 70%;
+    text-align: left;
+    color: gray;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+}
+
+h2,
+input {
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    height: 100%;
+    width: 70%;
+    text-align: left;
+}
+
+a {
+    color: red !important;
+}
+
+button.btn.btn-outline-success {
+    margin: 0 !important;
+    padding: 2px 4px !important;
+    font-size: 16px !important;
+    float: right !important;
+}
+
+i.fa-trash:before {
+    height: 30px;
+    margin-right: 5px;
+    color: black;
+}
+
+.toyInputEdit {
+    height: 80%;
+    width: 60%;
+    text-align: left;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+}
+
+.invisible {
+    display: none;
+}

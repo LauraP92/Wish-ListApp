@@ -1,26 +1,68 @@
-#container {
-    width: 360px;
-    margin: 100px 20px 20px 0px;
-    background: #f7f7f7;
-    box-shadow: 0 0 3px rgb (0,0,0, 0.1);
+body {
+    background: url("sincerely-media-o7Wh-DFyfa0-unsplash.jpg");
+    background-size: cover;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin: 0px 10px;
+    background-color: transparent;
+    text-align: center;
+}
+
+.list-group-item {
+    background: transparent;
+    border: none;
     text-align: center;
 }
 
 ul {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 100%;
     text-align: center;
 }
 
 li {
-    height: 60%;
-    width: 60%;
+    height: 100%;
+    width: 100%;
+    color: rgb(254,95,45);
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 10px;
 }
 
-.btn1,
+a {
+    color: rgb(254,95,45);
+}
+
+td {
+    text-align: center;
+}
+
+.btn1 {
+    height: 30px !important;
+    width: 25px !important;
+    padding: 0px 0px 0px 0px !important;
+    float: right !important;
+    text-align: center !important;
+    background-color: rgb(56,128,31);
+}
+
 .btn2 {
-    height: 30px;
-    width: 30px;
-    padding: 0px 10px 0px 10px;
+    height: 30px !important;
+    width: 25px !important;
+    padding: 0px 0px 0px 0px !important;
+    float: left !important;
+    text-align: center !important;
+    background-color: rgb(56,128,31);
 }
 
+i {
+    margin: 0px 0px 0px 0px !important;
+    padding: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+    text-align: center !important;
+}
