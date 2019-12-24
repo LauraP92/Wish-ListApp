@@ -34,7 +34,8 @@ li {
 }
 
 a {
-    color: rgb(254,95,45);
+    color: green;
+    font-weight: bold;
 }
 
 td {

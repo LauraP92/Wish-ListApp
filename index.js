@@ -1,13 +1,17 @@
 var data = {
     badKids: [
-        { id: 0, name: "Andrei" },
+        { id: 0, name: "Andrei a.k.a Iubii" },
         { id: 1, name: "Cami" },
         { id: 2, name: "Vali" }
     ],
     goodKids: [
         { id: 3, name: "Laura" },
         { id: 4, name: "Ionut" },
-        { id: 5, name: "Bogdan" }
+        { id: 5, name: "Bogdan" },
+        { id: 6, name: "Andrei B." },
+        { id: 7, name: "Ramita" },
+        { id: 8, name: "Alex" },
+        { id: 9, name: "Ramona Iepurica" }
     ]
 }
 
