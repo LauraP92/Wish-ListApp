@@ -1,0 +1,41 @@
+body {
+    background: url("sincerely-media-EuZuJrYJbmg-unsplash.jpg");
+    background-size: cover;
+}
+
+h2 {
+    font-family: 'Handlee', cursive;
+    font-size: 30px;
+    color: red;
+}
+
+.list {
+    height: 100%;
+    width: 30%;
+    margin: 5px auto;
+}
+
+.list-group {
+    height: 100%;
+    width: 70%;
+    text-align: left;
+}
+
+li.list-group-item {
+    padding: 6px 8px;
+    height: 100%;
+    width: 100%;
+    color: gray;
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    text-align: left;
+    margin: auto;
+    border: 1px solid rgba(0,0,0,.125);;
+    /* background: transparent; */
+}
+
+button {
+    margin-left: 100px !important;
+    padding: 2px 4px !important;
+    font-size: 15px !important;
+}
