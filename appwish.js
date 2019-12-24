@@ -1,4 +1,4 @@
-// Split routes for username and repository name
+// Split routes for kidId and kid name
 let kidId = "";
 let name = "";
 
