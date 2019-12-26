@@ -1,5 +1,5 @@
 body {
-    background: url("sincerely-media-EuZuJrYJbmg-unsplash.jpg");
+    background: url("Pic/sincerely-media-EuZuJrYJbmg-unsplash.jpg");
     background-size: cover;
 }
 
@@ -35,7 +35,8 @@ li.list-group-item {
 }
 
 button {
-    margin-left: 100px !important;
-    padding: 2px 4px !important;
+    /* margin-left: 100px !important; */
+    /* padding: 2px 4px !important; */
     font-size: 15px !important;
+    float: right;
 }

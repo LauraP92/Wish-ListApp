@@ -10,13 +10,13 @@ function splitRoutes() {
         if (fieldAndValue[0] == "kidId") {
             kidId = fieldAndValue[1]
         }
-
+        
         if (fieldAndValue[0] == "name") {
-            name = fieldAndValue[1]
+            name = fieldAndValue[1].replace(/%20/g, " ");
         }
-
     });
 }
+
 splitRoutes()
 console.log(kidId);
 console.log(name);
@@ -36,6 +36,7 @@ if (index === -1) {
     index = data.map(o => o.id).indexOf(Number(kidId))
 }
 console.log(index, data[index]);
+
 
 $(".title").append(`<h2><a href="index.html">${name}'s List</a></h2>`)
 
