@@ -1,18 +1,41 @@
+@media screen and (max-width: 800px) {
+    .list, 
+    .list-kids {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+  }
+
 body {
     background: url("Pic/sincerely-media-EuZuJrYJbmg-unsplash.jpg");
     background-size: cover;
 }
 
-h2 {
+h2,
+.title,
+.titlekids {
     font-family: 'Handlee', cursive;
-    font-size: 30px;
+    font-size: 2.5vw !important;
     color: red;
 }
 
 .list {
     height: 100%;
     width: 30%;
-    margin: 5px auto;
+    margin-top: 10px; 
+    margin-left: 200px;
+    float: left;
+}
+
+.list-kids {
+    height: 100%;
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 200px;
+    float: right;
+}
+
+ul {
+    padding: 0% !important;
 }
 
 .list-group {
@@ -21,22 +44,24 @@ h2 {
     text-align: left;
 }
 
-li.list-group-item {
+li.list-group-item,
+li.list-group-kids {
     padding: 6px 8px;
     height: 100%;
     width: 100%;
     color: gray;
     font-family: 'Handlee', cursive;
-    font-size: 20px;
+    font-size: 1.5vw;
     text-align: left;
     margin: auto;
     border: 1px solid rgba(0,0,0,.125);;
-    /* background: transparent; */
 }
 
 button {
-    /* margin-left: 100px !important; */
-    /* padding: 2px 4px !important; */
-    font-size: 15px !important;
+    font-size: 1.2vw !important;
     float: right;
+}
+
+.invisible {
+    display: none;
 }
